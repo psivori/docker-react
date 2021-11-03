@@ -7,4 +7,4 @@ before_install:
   - docker build -t psivori/docker-react -f Dockerfile.dev .
 
 script: 
-  - docker run -e CLI=true psivori/docker-react npm run test
+  - docker run -e CI=true psivori/docker-react npm run test
